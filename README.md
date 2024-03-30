@@ -1,2 +1,2 @@
-# oop-c-
-a simple repository to learn oop in C++ 
+# oop-cplusplus
+A simple repository to learn oop in C++ 
