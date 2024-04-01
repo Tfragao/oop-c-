@@ -85,16 +85,17 @@ int main(void)
     // obj2.set_data_value(1000);
 
     /* Move Constructor*/
-    std::vector<Move> vec;
-    vec.push_back(Move{10});
+    // std::vector<Move> vec;
+    // vec.push_back(Move{10});
 
-    vec.push_back(Move{20});
-    vec.push_back(Move{30});
-    vec.push_back(Move{40});
-    vec.push_back(Move{50});
-    vec.push_back(Move{60});
-    vec.push_back(Move{70});
-    vec.push_back(Move{80});
+    /* Using const with classes*/
+    const Player p {"Villain", 100, 55};
+    Player p2 {"Hero", 50, 25};
+
+    // p.set_name("Super villain");
+    std::cout<<p.get_name()<<"\n";
+    std::cout<<p2.get_name()<<"\n";
+    p.display_another_player(p);
    
     return 0;
 }

@@ -49,7 +49,7 @@
     name = n;
  }
  
- std::string Player::get_name(){
+ std::string Player::get_name()const{
     return name;
  }
 
@@ -75,4 +75,7 @@
    std::cout<<"Name: "<<p.get_name()<<"\n";
    std::cout<<"Health: "<<p.get_health()<<"\n";
    std::cout<<"XP: "<<p.get_xp()<<"\n";
+ }
+ void Player::display_another_player(const Player &p) const{
+   std::cout<<p.get_name()<<"\n";
  }
